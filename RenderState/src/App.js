@@ -3,14 +3,17 @@ import './App.css';
 import React from "react";
 import {Component} from 'react';
 import banana from './assets/banana.jpg';
+
  /*
 function oi() {
   return (<h1>Olá mundo</h1>
   );
 }
 */
+
 class Pessoa extends Component{
 
+  //state que será renderizado
   state ={
     pessoa:[{
     nome: 'Gabriel',
