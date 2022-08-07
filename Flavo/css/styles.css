@@ -1,2 +1,13 @@
 @import 'header.css';
 @import 'main.css';
+
+body{
+    background-color: #96A755;
+}
+
+.fundo{
+    background-color: #F1B641;
+    margin: 30px;
+    border-radius: 50px;
+    border: solid 10px;
+}
