@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
-    width: 100%;
+    width: 95%;
     margin: auto;
     display: flex;
     background-color: #FFECC0;
     justify-content: space-between;
     align-items: center;
-    
     border-radius: 100px;
+    margin-top: 20px;
 }
 
 header img{
@@ -30,7 +36,6 @@ header p{
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    margin: 0px;
     margin-left: 40px;
 }
 
@@ -62,10 +67,12 @@ label[for="botaoMenu"]{
     padding: 5px;
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
     width: 45px;
     height: 45px;
+    margin-left: 15px;
+
 }
 
 #botaoMenu{
