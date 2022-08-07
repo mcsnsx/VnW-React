@@ -1,40 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import React from "react";
-import {Component} from 'react';
-import banana from './assets/banana.jpg';
- /*
-function oi() {
-  return (<h1>Olá mundo</h1>
-  );
-}
-*/
-class Pessoa extends Component{
+import { Component } from "react";
 
-  state ={
-    pessoa:[{
-    nome: 'Gabriel',
-    idade: 44,
-    comida: 'ovo',
-    musica: ['eletronica', 'funk', 'sertaneja']
-    }]};
+//DESAFIO
+//Crie um component de class
+// Crie uma arrow function que receba uma mensagem e exiba na tela
+// Crie uma arrow function que retorne o dobro de um número e exiba na tela
 
-    render(){
-      return(
-        <div>
-          <h1>{this.state.pessoa[0].nome}</h1>
-          <h2>{this.state.pessoa[0].idade}</h2>
-          <h3>{this.state.pessoa[0].comida}</h3>
-          <ul>
-            <li>{this.state.pessoa[0].musica[0]}</li>
-            <li>{this.state.pessoa[0].musica[1]}</li>
-            <li>{this.state.pessoa[0].musica[2]}</li>
-          </ul>
-          <img src={banana}/>
-        </div>
-        
-      )
-    }
+export default class Maria extends Component {
+  Eu = () => <h1>Criatividade está em falta no dia de hoje!</h1>;
+
+  Dobro = (x) => x * 2;
+
+  render() {
+    return (
+      <div>
+        {this.Eu()}
+        {this.Dobro(3)}
+      </div>
+    );
+  }
 }
 
 
