@@ -1,42 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import React from "react";
-import {Component} from 'react';
-import banana from './assets/banana.jpg';
- /*
-function oi() {
-  return (<h1>Olá mundo</h1>
-  );
+import React, { Component } from "react";
+
+export default class Music extends Component {
+  state = {
+    humanos: [
+      { nome: "Maria", idade: 27, cidade: "São Paulo" },
+      { nome: "Carolina", idade: 18, cidade: "Rio de Janeiro" },
+      { nome: "Mac", idade: 25, cidade: "Espirito Santo" },
+      { nome: "Nascimento", idade: 22, cidade: "Sergipe" },
+      { nome: "Xavier", idade: 20, cidade: "Recife" },
+      { nome: "M", idade: 16, cidade: "Curitiba" }
+    ]
+  };
+
+  render() {
+    return (
+      <section>
+        {this.state.humanos.map((rastreador) => (
+          <p>
+            Meu nome é {rastreador.nome} e sou de {rastreador.cidade}
+          </p>
+        ))}
+      </section>
+    );
+  }
 }
-*/
-class Pessoa extends Component{
-
-  state ={
-    pessoa:[{
-    nome: 'Gabriel',
-    idade: 44,
-    comida: 'ovo',
-    musica: ['eletronica', 'funk', 'sertaneja']
-    }]};
-
-    render(){
-      return(
-        <div>
-          <h1>{this.state.pessoa[0].nome}</h1>
-          <h2>{this.state.pessoa[0].idade}</h2>
-          <h3>{this.state.pessoa[0].comida}</h3>
-          <ul>
-            <li>{this.state.pessoa[0].musica[0]}</li>
-            <li>{this.state.pessoa[0].musica[1]}</li>
-            <li>{this.state.pessoa[0].musica[2]}</li>
-          </ul>
-          <img src={banana}/>
-        </div>
-        
-      )
-    }
-}
-
-
-
-export default Pessoa;
