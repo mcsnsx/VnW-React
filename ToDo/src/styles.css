@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+ul{
+  margin: 0px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.fundo {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #34373a;
+  height: 10vh;
+  color: white;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgb(31, 31, 31);
+  border: none;
+  color: white;
+  margin: 10px;
+}
+
+.botao{
+  width: 160px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgb(31, 31, 31);
+  border: none;
+  color: white;
+  margin: 1px;
+}
+
+.botao:hover{
+  background-color: rgb(109, 108, 108);
+}
+
+.fundoTarefas {
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  height: 7vh;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaoX{
+  width: 4.3vh;
+  height: 4.3vh;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgb(70, 17, 17);
+  border: none;
+  color: white;
+  margin-left: 10px;
+
+}
+
+.botaoX:hover{
+  background-color: rgb(182, 0, 0);
+}
+
+.lista{
+  align-items: center;
+  background-color: rgb(180, 180, 180);
+  width: 100vh;
+  height: 5vh;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 5px;
+  
+}
+
