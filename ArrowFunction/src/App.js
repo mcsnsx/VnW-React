@@ -20,6 +20,3 @@ export default class Maria extends Component {
   }
 }
 
-
-
-export default Pessoa;
